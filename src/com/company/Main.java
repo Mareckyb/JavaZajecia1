@@ -16,6 +16,13 @@ public class Main {
         dog.goWalk(50);
         System.out.println(dog.weight);
 
+        Car myCar = new Car();
+        myCar.brand="mercedes";
+        myCar.color="graphite";
+        myCar.engine="Disel";
+
+
+
 
     }
 }
