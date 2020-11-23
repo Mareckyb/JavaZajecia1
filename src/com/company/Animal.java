@@ -1,17 +1,20 @@
 package com.company;
 
-import java.io.File;
-
 public class Animal {
 
     static final Double MIN_WEIGHT = 2.0;
-    String species;
+    final String species = "Labrador";
     String name;
-    Double weight = 10.0;
-    File pic;
+    private Double weight;
 
-    void feed(Double foodWeight) {
-        weight += foodWeight;
+    public Animal() {
+        if (species == "Labrador") weight = 25.5;
+        else weight = 10.0;
+    }
+
+
+    void feed() {
+        weight += 1;
         System.out.println("Thx for food");
     }
 
@@ -19,15 +22,8 @@ public class Animal {
         return weight;
     }
 
-    void goWalk(int time) {
-        Double testWeight;
-
-        testWeight = this.weight - time;
-
-        if (testWeight >= MIN_WEIGHT) {
-            this.weight = testWeight;
-            System.out.println("Walk done");
-        } else System.out.println("Feed first");
-
+    void takeForAWalk() {
+        weight-= 1;
+        if (weight>0) System.out.println("Wonderful Walk!!"); else System.out.println("Your dog is dead!!");
     }
 }

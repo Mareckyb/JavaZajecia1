@@ -3,24 +3,19 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	Animal dog  = new Animal();
-	dog.species = "dog";
-	dog.name = "Haiko";
-	dog.weight = 22.0;
 
-	System.out.println(dog.name);
-    System.out.println(dog.species);
+// zadanie nr 1
+        Animal dog = new Animal();
+        while (dog.getWeight() >= 0) {
+            dog.feed();
+            dog.takeForAWalk();
+            dog.takeForAWalk();
+        }
 
-
-        System.out.println(dog.weight);
-        dog.goWalk(50);
-        System.out.println(dog.weight);
-
-        Car myCar = new Car();
-        myCar.brand="mercedes";
-        myCar.color="graphite";
-        myCar.engine="Disel";
-
+//zadanie 2
+        Car GD1212 = new Car();
+        Human Zenek = new Human();
+        Zenek.auto = GD1212;
 
 
 

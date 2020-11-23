@@ -5,5 +5,6 @@ public class Human {
     String lastName;
     Animal pet;
     private Double salary;
+    Car auto;
 
 }
