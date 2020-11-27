@@ -1,9 +1,9 @@
-package com.company;
+package com.company.devices;
 
 public class Car {
     String model;
     String producer;
     String engine;
     String color;
-    Double price;
+    public Double price;
 }

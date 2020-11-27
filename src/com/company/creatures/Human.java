@@ -1,20 +1,17 @@
-package com.company;
+package com.company.creatures;
+import com.company.devices.Car;
+
 import java.time.LocalDateTime;
 
 public class Human {
-    String firstName;
-    String lastName;
-    Animal pet;
+    public String firstName;
+    public String lastName;
+    public Animal pet;
     private Car auto;
-
-
-
 
     public Car getAuto() {
         return auto;
     }
-
-
 
     public void setAuto(Car auto) {
 
@@ -34,9 +31,6 @@ public class Human {
     private Double salary;
 
 
-
-
-
     public Double getSalary() {
         System.out.println(LocalDateTime.now());
         System.out.println(this.salary);
@@ -50,6 +44,10 @@ public class Human {
             System.out.println("ZUS i US już wszystko wiedzą. Nie ukrywaj dochodu :-) ");
             this.salary = money;
             }
+        }
+
+        public String toString(){
+            return (this.firstName+ " " + this.lastName);
         }
 
 

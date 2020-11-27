@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.creatures.Animal;
+import com.company.creatures.Human;
+import com.company.devices.Car;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -17,15 +21,13 @@ public class Main {
         GD1212.price = 300000.0;
 
         Human Marek = new Human();
+        Marek.firstName= "Marek";
+        Marek.lastName = "Koszmarek";
         Marek.getSalary();
         Marek.setSalary(50000.0);
         Marek.getSalary();
         Marek.setAuto(GD1212);
-
-
-
-
-
+        System.out.println(Marek);
 
     }
 }

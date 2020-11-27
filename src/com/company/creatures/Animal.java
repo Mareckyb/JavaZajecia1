@@ -1,11 +1,11 @@
-package com.company;
+package com.company.creatures;
 
 public class Animal {
 
-    static final Double MIN_WEIGHT = 2.0;
-    final String species = "Labrador";
+    static public final Double MIN_WEIGHT = 2.0;
+    final public String species = "Labrador";
     String name;
-    private Double weight;
+    public Double weight;
 
     public Animal() {
         if (species == "Labrador") weight = 25.5;
@@ -13,16 +13,16 @@ public class Animal {
     }
 
 
-    void feed() {
+    public void feed() {
         weight += 1;
         System.out.println("Thx for food");
     }
 
-    Double getWeight() {
+    public Double getWeight() {
         return weight;
     }
 
-    void takeForAWalk() {
+    public void takeForAWalk() {
         weight-= 1;
         if (weight>0) System.out.println("Wonderful Walk!!"); else System.out.println("Your dog is dead!!");
     }
