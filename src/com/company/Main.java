@@ -14,8 +14,16 @@ public class Main {
 
 //zadanie 2
         Car GD1212 = new Car();
-        Human Zenek = new Human();
-        Zenek.auto = GD1212;
+        GD1212.price = 300000.0;
+
+        Human Marek = new Human();
+        Marek.getSalary();
+        Marek.setSalary(50000.0);
+        Marek.getSalary();
+        Marek.setAuto(GD1212);
+
+
+
 
 
 

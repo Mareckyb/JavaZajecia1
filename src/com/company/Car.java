@@ -5,4 +5,5 @@ public class Car {
     String producer;
     String engine;
     String color;
+    Double price;
 }
