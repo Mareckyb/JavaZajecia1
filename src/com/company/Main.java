@@ -29,9 +29,9 @@ public class Main {
         Marek.getSalary();
         Marek.setAuto(GD1212);
 
-        Device nowy_model = new Device();
+        Device Nowy_model = new Device();
 
-        System.out.println(nowy_model);
+        System.out.println(Nowy_model);
 
 
 
