@@ -3,6 +3,7 @@ package com.company;
 import com.company.creatures.Animal;
 import com.company.creatures.Human;
 import com.company.devices.Car;
+import com.company.devices.Device;
 
 public class Main {
 
@@ -27,7 +28,12 @@ public class Main {
         Marek.setSalary(50000.0);
         Marek.getSalary();
         Marek.setAuto(GD1212);
-        System.out.println(Marek);
+
+        Device nowy_model = new Device();
+
+        System.out.println(nowy_model);
+
+
 
     }
 }
