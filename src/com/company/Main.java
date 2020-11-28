@@ -29,9 +29,7 @@ public class Main {
         Marek.getSalary();
         Marek.setAuto(GD1212);
 
-        Device Nowy_model = new Device();
-
-        System.out.println(Nowy_model);
+        GD1212.turnOn();
 
 
 

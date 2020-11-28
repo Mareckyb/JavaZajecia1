@@ -1,5 +1,6 @@
 package com.company.creatures;
 import com.company.devices.Car;
+import com.company.devices.Phone;
 
 import java.time.LocalDateTime;
 
@@ -8,6 +9,8 @@ public class Human {
     public String lastName;
     public Animal pet;
     private Car auto;
+    public Double cash;
+    public Phone phone;
 
     public Car getAuto() {
         return auto;
